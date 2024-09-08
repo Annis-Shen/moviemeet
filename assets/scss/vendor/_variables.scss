@@ -325,7 +325,8 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "gray-400": $gray-400,
+  "gray-400": $gray-400, //moviemeet
+  "gray-300": $gray-300, //moviemeet
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -434,6 +435,8 @@ $spacers: (
 $position-values: (
   0: 0,
   50: 50%,
+  20: 20%,
+  30: 30%,
   100: 100%
 ) !default;
 // scss-docs-end position-map

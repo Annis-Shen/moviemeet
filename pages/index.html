@@ -11,56 +11,23 @@
     <%- include('./layout/header'); -%>
 
    <main class="index-main">
-    <section class="container-fluid">
-      <div class="banner p-5 mb-4 mw-100 position-relative">
-        <picture class="d-flex justify-content-end">
-          <source media="(min-width: 992px)" srcset="../assets/images/deco/地面師banner.png">
-          <img src="../assets/images/deco/地面師banner.png" alt="地面師">
-        </picture>
-       <!--banner文字-->
-        <div class="container py-5 position-absolute top-0 start-45">
-          <img src="../assets/images/deco/人氣聊串.png" alt="人氣聊串">
-          <div class="post-text"> 
-          <p class="fs-4">#68</p>
-          <h4 class="display-5 fw-bold col-lg-6">一天追完！劇情好刺激！揪劇友一起討論啊！</h4>
+    <section class="container-fluid banner">
+      <div class="container mb-4">
+       <!--banner文字-->  
+        <div class="py-5">
+            <img src="../assets/images/deco/人氣聊串.png" alt="人氣聊串">
+          <div class="post-text mb32 pl12"> 
+          <p class="fs-4 mt32">#68</p>
+          <h4 class="display-5 fw-bold col-lg-6 my-4">一天追完！劇情好刺激！揪劇友一起討論啊！</h4>
           <div class="tag">
-            <button type="button" class="btn btn-gray-400">#地面師</button>
-            <a href="#" class="btn btn-gray-400" role="button">#大推特推</a>
-            <a href="#" class="btn btn-gray-400" role="button">#無雷</a>
-          </div>
-          <!--其他串聊-->
-          <div class="container">
-            <div class="row">
-              <div class="col-4">
-                <box class="d-flex postcard border-bottom border-Primary">
-                  <img src="../assets/images/聊串/地面師聊串.png" alt="地面師">
-                  <div>
-                    <p>一天追完！劇情好刺激！揪劇友一起討論...</p>
-                    <div class="tag">
-                      <button type="button" class="btn btn-gray-400">#地面師</button>
-                      <a href="#" class="btn btn-gray-400" role="button">#大推特推</a>
-                      <a href="#" class="btn btn-gray-400" role="button">#無雷</a>
-                    </div>
-                  </div>
-                </box>
-              </div>
-              <div class="col-4">
-                <box></box>
-              </div>
-              <div class="col-4">
-                <box></box>
-              </div>
+            <a href="#" class="btn btn-gray-300 rounded-pill" role="button">#地面師</a>
+            <a href="#" class="btn btn-gray-300 rounded-pill mx5" role="button">#大推特推</a>
+            <a href="#" class="btn btn-gray-300 rounded-pill" role="button">#無雷</a>
+          </div>    
+        </div>
+         <!--其他串聊-->
+        <%- include('./layout/Carousel_post'); -%>
 
-            </div>
-          </div>
-
-          
-        
-
-
-          </div>
-           
-          
         </div>
       </div>
     </section>
@@ -85,7 +52,7 @@
    <!--排行榜-->
     <div class="ranking mt10">
      <!--熱門-->
-      <div class="popular container">
+      <div class="popular container my10">
         <div class="row gy-2">
           <div class="col-lg-12">
             <box class="d-flex align-items-center justify-content-center">
@@ -135,7 +102,7 @@
     </div>
      </div>
   <!--新劇-->
-  <div class="new container">
+  <div class="new container my10">
     <div class="row gy-2 ">
       <div class="col-lg-12 ">
         <box class="d-flex align-items-center justify-content-center">
@@ -190,10 +157,10 @@
 
   <div class="intro">
     <div class="container">
-      <!--圖片左邊-->>
+      <!--圖片左邊-->
       <div class="row justify-content-center align-items-center bg-black g-0"> 
         <div class="col-lg-7">
-          <img src="../assets/images/deco/intro-1.png" alt="個人頁面">
+          <img src="../assets/images/deco/intro-1.png" alt="個人頁面" class="py5">
         </div>
         <div class="col-lg-5 align-items-center">
           <div class="text">
@@ -208,15 +175,15 @@
           </div>
         </div>
       </div>
-      <!--圖片右邊-->>
+      <!--圖片右邊-->
       <div class="row justify-content-center align-items-center bg-black g-0">
-        <div class="col-lg-4 offset-md-1 align-items-center ">
+        <div class="col-lg-4 offset-md-1 align-items-center">
           <div class="text">
             <h4 class="d-inline">找到新劇友，一起穿越劇中世界</h4>
             <div class="bottom position-relative">
               <picture>
                 <source media="(min-width: 992px)" srcset="../assets/images/deco/002.png">
-                <img src="../assets/images/deco/002.png" alt="按鈕背景">
+                <img src="../assets/images/deco/002.png" alt="按鈕背景" class="py5">
               </picture>
               <a href="#" class="position-absolute top-50 start-0 translate-middle-y pl6 fz-lg6 fw-7 link-dark line-height-lg">我的劇友<i class="bi bi-chevron-right"></i></a>
             </div>           
@@ -229,7 +196,7 @@
 
       <div class="row justify-content-center align-items-center bg-black g-0"> 
         <div class="col-lg-7">
-          <img src="../assets/images/deco/intro-3.png" alt="我的角色卡">
+          <img src="../assets/images/deco/intro-3.png" alt="我的角色卡" class="py5">
         </div>
         <div class="col-lg-5 align-items-center">
           <div class="text">
@@ -246,13 +213,13 @@
       </div>
 
       <div class="row justify-content-center align-items-center bg-black g-0">
-        <div class="col-lg-4 offset-md-1 align-items-center ">
+        <div class="col-lg-4 offset-md-1 align-items-center">
           <div class="text">
             <h4 class="d-inline">典藏經典，二十年後復刻悸動</h4>
             <div class="bottom position-relative">
               <picture>
                 <source media="(min-width: 992px)" srcset="../assets/images/deco/002.png">
-                <img src="../assets/images/deco/002.png" alt="按鈕背景">
+                <img src="../assets/images/deco/002.png" alt="按鈕背景" class="py5">
               </picture>
               <a href="#" class="position-absolute top-50 start-0 translate-middle-y pl6 fz-lg6 fw-7 link-dark line-height-lg">我的典藏文<i class="bi bi-chevron-right"></i></a>
             </div>           
