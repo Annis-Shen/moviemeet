@@ -10,5 +10,32 @@
     background-position: right;
  }
 
+ .tag-bg{
+   height: auto;
+   background: linear-gradient(
+      to left,
+      rgba(254, 254, 254, 0.1),
+      rgba(14, 14, 14, 0.5),
+   )
+ }
 
+ .tagbtn-bg{
+   background: linear-gradient(
+      to left top,
+      rgba(254, 254, 254, 0.2),
+      rgba(14, 14, 14, 0.3),
+      rgba(14, 14, 14, 0.0),
+   )  
+ }
+
+ .all-tag{
+   white-space: nowrap;
+   background: linear-gradient(
+      to left,
+      rgba(254, 254, 254, 0.1),
+      rgba(254, 254, 254, 0.1),
+      rgba(14, 14, 14, 0.5),
+   )
+
+ }
 }
