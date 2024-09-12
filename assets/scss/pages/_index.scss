@@ -1,7 +1,15 @@
 .index-main{
  .postcard{
-  width: 50%;
+  height: 133px;
+  
+  @media (max-width:992px) {
+   height:auto;
  }
+ }
+.postpic{
+   width: 148px;
+   height:105px
+}
 
  .banner{
     background-image: url(/assets/images/deco/地面師banner.png);
