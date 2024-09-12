@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>編輯資料</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid text-center py20 py-lg10">
+            <h4>編輯資料</h4>
+        </div>
+    </header>
+
+    <main class="myProfileEdit-main">
+      <form class="container d-flex flex-column justify-content-center align-items-center mb30">
+        <section class="profile container border-bottom pb5">
+            <div class="row justify-content-center align-items-center">
+               <!--大頭貼--> 
+                <div class="col-4">
+                    <box class="Photo-stickers d-flex flex-column align-items-center">
+                        <div>
+                            <img src="../assets/images/profile/profile-image.png" alt="魏瓔珞" width="150" height="150">
+                        </div>
+                        <div class="mt8">
+                            <i class="bi bi-pencil-fill"></i>
+                            <a href="#" class="fz-5 ml3">更換角色</a>
+                        </div>
+                    </box>
+                </div>
+                <div class="col-6">
+                    <box>
+                        <label for="username" class="form-label fz-7">名字</label>
+                        <input type="text" id="username" class="form-control bg-dark border-0">
+                    </box>
+                </div>
+            </div>
+           <!--簡介--> 
+            <div class="row justify-content-center align-items-center ">
+               <div class="col-4 text-center">
+                <div class="birthday my20">
+                    <label for="birthday" class="mr4">生日</label>
+                    <input type="date" id="birthday" name="birthday bg-dark">
+                </div>
+               </div> 
+               
+                <div class="col-6">
+                    <div class="Introduction">
+                       <label for="Introduction">簡介</label> 
+                       <textarea class="form-control bg-dark border-0 text-gray-300" id="Introduction" rows="5">我超愛看劇的，天天沙發馬鈴薯，經常在沙發上睡著...</textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+          <div class="container my20">
+            <div class="row justify-content-center align-items-center">
+                 <div class="col-4 align-items-center">
+                     <box >
+                         <div>
+                            <ul class="d-flex justify-content-around">
+                                <li>關注</li>
+                                <li class="ml9"><a href="#" class="fz-5"><i class="bi bi-chevron-right"></i></a></li>
+                            </ul>
+                             
+                         </div>
+                     </box>
+                 </div>
+                 <div class="col-6">
+                     <box>
+                        <ul class="d-flex justify-content-around">
+                            <li>劇友</li>
+                            <li class="ml9"><a href="#" class="fz-5"><i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                     </box>
+                 </div>
+             </div>
+            
+             
+         <div class="dramalist ml20 mt10">
+            <P class="">我正在追</P>
+            <div class="container mt10">
+                <div class="row gy-4">
+                    <div class="col-lg-3">
+                        <box class="position-relative">
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="../assets/images/profile/魷魚遊戲.png">
+                                    <img src="../assets/images/profile/魷魚遊戲.png" alt="dramalist-1" class="">
+                                  </picture>
+                                  <p class="position-absolute bottom-0 start-0">魷魚遊戲</p>
+                            </div>
+                        </box>
+                        
+                    </div>
+                    <div class="col-lg-3">
+                        <box class="position-relative">
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="../assets/images/profile/復仇者聯盟.png">
+                                    <img src="../assets/images/profile/復仇者聯盟.png" alt="dramalist-2" class="object-fit-cover">
+                                  </picture>
+                                  <p class="position-absolute bottom-0 start-0">復仇者聯盟</p>
+                            </div>
+
+                        </box>
+                    </div>
+                    <div class="col-lg-3">
+                        <box class="position-relative">
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="../assets/images/profile/墨雨雲間.png">
+                                    <img src="../assets/images/profile/墨雨雲間.png" alt="dramalist-3" class="">
+                                  </picture>
+                                  <p class="position-absolute bottom-0 start-0">墨雨雲間</p>
+                            </div>
+                        </box>
+                    </div>
+                    <div class="col-lg-3">
+                        <box class="position-relative">
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="../assets/images/profile/月之戀人.png">
+                                    <img src="../assets/images/profile/月之戀人.png" alt="dramalist-4" class="">
+                                  </picture>
+                                  <p class="position-absolute bottom-0 start-0">月之戀人</p>
+                            </div>
+                        </box>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-gray-300 text-center" >
+                            <a href="#" class="py10 fz-15"><i class="bi bi-plus-circle"></i></a>
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+              </div>
+
+        </div>
+          </div>
+           <button class="w-25 btn btn-gray-300 btn-lg d-inline" type="submit">完成編輯</button>
+      
+
+       </form> 
+         
+
+
+
+
+
+    </main>
+
+
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
